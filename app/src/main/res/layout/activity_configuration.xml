@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ConfigurationActivity"
+    android:layout_margin="20dp">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <TextView
+        android:id="@+id/sorting_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/guideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Tri par prix"
+
+        />
+
+    <Switch
+        android:id="@+id/switch_sorting_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/sorting_price"
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+        />
+
+    <TextView
+        android:id="@+id/tv_prix_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prix par défaut"
+        app:layout_constraintTop_toBottomOf="@id/sorting_price"
+        android:layout_marginTop="30dp"
+        app:layout_constraintRight_toLeftOf="@id/guideline"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/et_default_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_prix_default"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

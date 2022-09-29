@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="wrap_content">
+        <item name = "android:layout_width"> wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundColor">@color/cardview_shadow_end_color</item>
+    </style>
+
+    <style name="buttonAppCompat">
+        <item name = "android:layout_width">0dp</item>
+        <item name= "backgroundColor">#303030</item>
+        <item name= "layout_constraintBottom_toBottomOf">parent</item>
+    </style>
+
+</resources>
